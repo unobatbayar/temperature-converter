@@ -1,5 +1,5 @@
 # temperature-converter
-Java program which lets you convert between Fahrenheit, Celsius, Kelvin and Rankine
+Java program which lets you convert between Celsius, Fahrenheit, Kelvin and Rankine
 
 ![alt text](https://github.com/unobatbayar/temperature-converter/blob/master/Images/img1.png) ![alt text](https://github.com/unobatbayar/temperature-converter/blob/master/Images/img2.png)
     
