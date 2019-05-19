@@ -129,7 +129,7 @@ public class GUI
 						b.setText("Reset");	
 					}
 				}
-				else{ // Reset
+				else { 
 					celsius.setText("");
 					fahrenheit.setText("");
 					kelvin.setText("");
