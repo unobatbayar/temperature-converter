@@ -99,40 +99,47 @@ public class GUI
 
 				if(b.getText() == "Convert"){
 
-					if(!(celsius.getText().equals(null))){
+					boolean input_received = false;
+					if(!(celsius.getText().isEmpty())){
 						c = Double.parseDouble(celsius.getText());
 						f = converter.toFarenheit(c);
 						k = converter.toKelvin(f);
 						r = converter.toRankine(k);
 						b.setText("Reset");	
+						input_received = true;
 					}
-					// else if(!(fahrenheit.getText().equals(null))){
-					// 	f = Double.parseDouble(fahrenheit.getText());
-					// 	k = converter.toKelvin(f);
-					// 	r = converter.toRankine(k);
-					// 	c = converter.toCelcius(r);
-					// 	b.setText("Reset");	
-					// }
-					// else if (!(kelvin.getText().equals(null))){
-					// 	k = Double.parseDouble(kelvin.getText());
-					// 	r = converter.toRankine(k);
-					// 	c = converter.toCelcius(r);
-					// 	f = converter.toFarenheit(c);
-					// 	b.setText("Reset");	
-					// }
-					// elseif (!(rankine.getText().equals(null))){
-					// 	r = Double.parseDouble(rankine.getText());
-					// 	c = converter.toCelcius(r);
-					// 	f = converter.toFarenheit(c);
-					// 	k = converter.toKelvin(f);
-					// 	b.setText("Reset");	
-					// }
-					celsius.setText(Double.toString(c));
-					fahrenheit.setText(Double.toString(f));
-					kelvin.setText(Double.toString(k));
-					rankine.setText(Double.toString(r));
+					else if(!(fahrenheit.getText().isEmpty())){
+						f = Double.parseDouble(fahrenheit.getText());
+						k = converter.toKelvin(f);
+						r = converter.toRankine(k);
+						c = converter.toCelcius(r);
+						b.setText("Reset");	
+						input_received = true;
+					}
+					else if (!(kelvin.getText().isEmpty())){
+						k = Double.parseDouble(kelvin.getText());
+						r = converter.toRankine(k);
+						c = converter.toCelcius(r);
+						f = converter.toFarenheit(c);
+						b.setText("Reset");	
+						input_received = true;
+					}
+					else if (!(rankine.getText().isEmpty())){
+						r = Double.parseDouble(rankine.getText());
+						c = converter.toCelcius(r);
+						f = converter.toFarenheit(c);
+						k = converter.toKelvin(f);
+						b.setText("Reset");	
+						input_received = true;
+					}
+					if(input_received){
+						celsius.setText(Double.toString(c));
+						fahrenheit.setText(Double.toString(f));
+						kelvin.setText(Double.toString(k));
+						rankine.setText(Double.toString(r));
+					}
 				}
-				else{
+				else{ // Reset
 					celsius.setText("");
 					fahrenheit.setText("");
 					kelvin.setText("");
