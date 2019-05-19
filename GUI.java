@@ -88,7 +88,6 @@ public class GUI
 		frame.setLayout(null);    
 		frame.setVisible(true);    
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
-		
 
 		//Action listener
 		b.addActionListener(new ActionListener() {
@@ -98,45 +97,36 @@ public class GUI
 				double c = 0, f = 0, k = 0, r = 0;
 
 				if(b.getText() == "Convert"){
-
-					boolean input_received = false;
 					if(!(celsius.getText().isEmpty())){
 						c = Double.parseDouble(celsius.getText());
 						f = converter.toFarenheit(c);
 						k = converter.toKelvin(f);
 						r = converter.toRankine(k);
-						b.setText("Reset");	
-						input_received = true;
 					}
 					else if(!(fahrenheit.getText().isEmpty())){
 						f = Double.parseDouble(fahrenheit.getText());
 						k = converter.toKelvin(f);
 						r = converter.toRankine(k);
 						c = converter.toCelcius(r);
-						b.setText("Reset");	
-						input_received = true;
 					}
 					else if (!(kelvin.getText().isEmpty())){
 						k = Double.parseDouble(kelvin.getText());
 						r = converter.toRankine(k);
 						c = converter.toCelcius(r);
 						f = converter.toFarenheit(c);
-						b.setText("Reset");	
-						input_received = true;
 					}
 					else if (!(rankine.getText().isEmpty())){
 						r = Double.parseDouble(rankine.getText());
 						c = converter.toCelcius(r);
 						f = converter.toFarenheit(c);
 						k = converter.toKelvin(f);
-						b.setText("Reset");	
-						input_received = true;
 					}
-					if(input_received){
+					if(!(celsius.getText().isEmpty()) || !(fahrenheit.getText().isEmpty()) || !(kelvin.getText().isEmpty()) || !(rankine.getText().isEmpty())){
 						celsius.setText(Double.toString(c));
 						fahrenheit.setText(Double.toString(f));
 						kelvin.setText(Double.toString(k));
 						rankine.setText(Double.toString(r));
+						b.setText("Reset");	
 					}
 				}
 				else{ // Reset
@@ -146,12 +136,10 @@ public class GUI
 					rankine.setText("");
 					b.setText("Convert");
 				}
-
 			}          
 	    });
 	}         
-        public static void main(String[] args) 
-        {    
-			//nothing
-		}    
+        public static void main(String[] args){
+					//nothing
+				}    
 }
