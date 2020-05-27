@@ -1,7 +1,7 @@
 <div align="center">
   <h1><code>temperature-converter</code></h1>
 
-  <strong>Java program which lets you convert between Celsius, Fahrenheit, Kelvin and Rankine. </strong>
+  <strong>Java program which lets you convert between Celsius, Fahrenheit, Kelvin and Rankine </strong>
 
 <h3>
     <a href="https://github.com/unobatbayar/Temperature-Converter/pull/new/master">Contribute</a>
