@@ -1,4 +1,4 @@
-![version](https://img.shields.io/badge/version-1.2-blue)
+![version](https://img.shields.io/badge/version-2.0-blue)
 
 <div align="center">
   <h1><code>temperature-converter</code></h1>
