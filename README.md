@@ -3,7 +3,7 @@
 <div align="center">
   <h1><code>temperature-converter</code></h1>
 
-  <strong>Java program which lets you convert between Celsius, Fahrenheit, Kelvin and Rankine </strong>
+  <strong>Convert between Celsius, Fahrenheit, Kelvin and Rankine </strong>
 
   [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
 
