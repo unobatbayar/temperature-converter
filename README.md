@@ -5,11 +5,8 @@
 
   <strong>Java program which lets you convert between Celsius, Fahrenheit, Kelvin and Rankine </strong>
 
-<h3>
-    <a href="https://github.com/unobatbayar/Temperature-Converter/pull/new/master">Contribute</a>
-  </h3>
+  [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/unobatbayar.svg?style=social&label=%40unobatbayar)](https://twitter.com/unobatbayar)
 
-  <sub> Built by <a href="https://www.twitter.com/unobatbayar">unobatbayar</a> for people to use.</sub>
 </div>
 
 ## Demo
